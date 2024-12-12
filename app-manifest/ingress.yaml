@@ -16,6 +16,7 @@ metadata:
     alb.ingress.kubernetes.io/unhealthy-threshold-count: '2'   
     # SSL Settings
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}, {"HTTP":80}]'
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-west-1:654654241121:certificate/71cada85-3add-4eb1-8f4a-23171fdc7303
     alb.ingress.kubernetes.io/ssl-redirect: '443'
     # External DNS - For creating a Record Set in Route53
     #external-dns.alpha.kubernetes.io/hostname: www.waldra.net
