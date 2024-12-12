@@ -21,8 +21,8 @@ metadata:
     #external-dns.alpha.kubernetes.io/hostname: www.waldra.net
 spec:
   ingressClassName: aws-alb 
-  rules:
-  - host: *.waldra.net           
+  #rules:
+  #- host: *.waldra.net           
   defaultBackend:
     service:
       name: bloggingapp-svc
